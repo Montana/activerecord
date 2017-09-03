@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>StockQuoteSimpleWeb</title>
+
+    <link rel="stylesheet" href="styles/main.css">
+</head>
+
+<body>
+  Enter Symbol:
+  <input id="enteredSymbol" type="text" placeholder="AAPL,IBM,or MSFT">
+
+  <span id="priceQuote"></span>
+
+  <div>
+  <input id="asyncHttpButton" type="button" value="Run Async+HttpRequest"
+          class="btn"/>  Get yesterday's prices from a JSON file
+  </div>
+
+  <div>
+  <input id="asyncLoopButton" type="button" value="Run Async+Loop"
+         class="btn"/>  The input field becomes frozen in Dart VM
+  </div>
+
+  <div>
+  <input id="isolateLoopButton" type="button" value="Run Isolate+Loop"
+         class="btn"/>  The input field is not frozen
+  </div>
+
+
+  <div id="log"></div>
+
+  <div id="yesterdaysPricesDiv"></div>
+
+<script type="application/dart" src="main.dart"></script>
+<script data-pub-inline src="packages/browser/dart.js"></script>
+</body>
+</html>
